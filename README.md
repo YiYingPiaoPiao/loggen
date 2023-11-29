@@ -1,1 +1,1 @@
-# Gen Log
+Log Gen
