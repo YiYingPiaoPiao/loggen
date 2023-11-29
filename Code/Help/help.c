@@ -1,7 +1,7 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : loggen.c
+ | File : Help/help.c
  |
  | Created on 29-Nov-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
@@ -12,27 +12,20 @@
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#include "loggen.h"
+#include "help.h"
 
-// Main Function
-int main(int argc, char **argv) {
+// Public Function
+struct HELP helpInit() {
 
-    help = helpInit();
+    struct HELP help;
 
-    if (argc <= 1) {
+    help.displayShort = displayShort;
 
-        // Display help message
-        help.displayShort();
+    return help;
+}
 
-        return 0;
-    }
+// Private Function
+static void displayShort() {
 
-    if (strcmp(argv[1], "help") == 0 || strcmp(argv[1], "Help") == 0) {
-
-        printf("Help");
-    }
-
-    printf("%s", argv[1]);
-
-    return 0;
+    printf("Help short");
 }

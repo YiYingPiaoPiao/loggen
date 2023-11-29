@@ -16,7 +16,11 @@
 #define CODE_LOGGEN_H
 
 #include <stdio.h>
+#include <string.h>
 
 #include "Error/error.h"
+#include "Help/help.h"
+
+struct HELP help;
 
 #endif //CODE_LOGGEN_H

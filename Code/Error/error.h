@@ -19,6 +19,4 @@
 
 #include "../Struct/struct_error.h"
 
-void test();
-
 #endif //CODE_ERROR_H

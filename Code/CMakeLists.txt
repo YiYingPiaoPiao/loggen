@@ -7,5 +7,8 @@ add_executable(Code
         loggen.c
         loggen.h
         Struct/struct_error.h
+        Struct/struct_help.h
         Error/error.h
-        Error/error.c)
+        Error/error.c
+        Help/help.c
+        Help/help.h)

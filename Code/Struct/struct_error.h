@@ -15,9 +15,10 @@
 #ifndef CODE_STRUCT_ERROR_H
 #define CODE_STRUCT_ERROR_H
 
-struct Error {
+struct ERROR {
 
-    int num;
+    int   errCode;
+    char* errMsg;
 };
 
 #endif //CODE_STRUCT_ERROR_H

@@ -8,17 +8,30 @@
 
 ### **OVERVIEW**
 
-
-<hr width="20%"/><br/>
+<hr width="20%"/>
 
 `First of all, this project is for me to learn C language and understand how it works.`
 </div>
 
+<div align="center">
+
 #### ***Overview***
+</div>
+
+<div align="center">
 
 #### ***Language***
+</div>
 
 C Language
+
+<div align="center">
+<hr width="20%"/>
+
+### **GUIDE**
+
+<hr width="20%"/>
+</div>
 
 <div align="center">
 <hr width="20%"/>
@@ -43,7 +56,7 @@ C Language
 
 ### **LICENSE**
 
-<hr width="20%"/><br/>
+<hr width="20%"/>
 
 #### [MIT](https://github.com/YiYingPiaoPiao/loggen/blob/main/LICENSE) &copy; [YiYingPiaoPiao](https://github.com/YiYingPiaoPiao), [SeeChen](https://github.com/SeeChen).
 
@@ -56,5 +69,5 @@ C Language
 ---
 <div align="right">
 
-###### *Last Modified by [SeeChen](https://github.com/SeeChen/) @ 29-NOV-2023 22:00 UTC +08:00*
+###### *Last Modified by [SeeChen](https://github.com/SeeChen/) @ 29-NOV-2023 22:20 UTC +08:00*
 </div>

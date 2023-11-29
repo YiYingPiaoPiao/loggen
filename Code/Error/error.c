@@ -14,11 +14,4 @@
 
 #include "error.h"
 
-struct Error err;
-
-void test() {
-
-    err.num = 0;
-
-    printf("%d", err.num);
-}
+struct ERROR err;
