@@ -16,7 +16,16 @@
 #define CODE_ERROR_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
+#include "../global.h"
 #include "../Struct/struct_error.h"
+
+#define ErrorSize 5
+
+private char* getMsg(int);
+private void  setMsg();
+
+private char** Msg;
 
 #endif //CODE_ERROR_H

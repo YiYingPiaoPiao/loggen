@@ -6,7 +6,7 @@
  | Created on 29-Nov-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 29-Nov-2023
+ | Last modified on 30-Nov-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
@@ -17,7 +17,7 @@
 
 struct HELP {
 
-    void (*displayShort)();     // Display short help message
+    void (*showShort)();
 };
 
 #endif //CODE_STRUCT_HELP_H

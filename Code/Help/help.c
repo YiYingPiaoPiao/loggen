@@ -1,31 +1,36 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Help/help.c
+ | File : Help/Help.c
  |
  | Created on 29-Nov-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 29-Nov-2023
+ | Last modified on 30-Nov-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#include "help.h"
+#include "HelpPub.h"
+#include "Help.h"
 
-// Public Function
-struct HELP helpInit() {
+public HELP* Help() {
 
-    struct HELP help;
+    HELP* Help = (HELP*) malloc(sizeof(HELP));
 
-    help.displayShort = displayShort;
+    Help->showShort = showShort;
 
-    return help;
+    return Help;
 }
 
-// Private Function
-static void displayShort() {
+public void freeHelp(HELP* freeHelp) {
 
-    printf("Help short");
+    free(freeHelp);
+}
+
+private void showShort() {
+
+    printf("usage: loggen [-v | -version]\n");
+    printf("              [-h | -help]\n");
 }

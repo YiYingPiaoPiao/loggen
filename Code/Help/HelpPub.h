@@ -1,9 +1,9 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : loggen.h
+ | File : Help/HelpPub.h
  |
- | Created on 29-Nov-2023
+ | Created on 30-Nov-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
  | Last modified on 30-Nov-2023
@@ -12,19 +12,15 @@
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_LOGGEN_H
-#define CODE_LOGGEN_H
+#ifndef CODE_HELPPUB_H
+#define CODE_HELPPUB_H
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "../global.h"
+#include "../Struct/struct_help.h"
 
-#include "global.h"
-#include "Error/ErrorPub.h"
-#include "Help/HelpPub.h"
-#include "Init/InitPub.h"
+typedef struct HELP HELP;
 
-private void ObjectsCreate();
-private void ObjectsClearUp();
+public HELP *Help();
+public void freeHelp(HELP*);
 
-#endif //CODE_LOGGEN_H
+#endif //CODE_HELPPUB_H
