@@ -17,12 +17,10 @@
 
 struct INIT {
 
-    // Setter
+    void (*userInput)(char**);
+
     void (*setProjectName)(char*);
 
-    // Getter
-
-    // Function
     bool (*isInit)();
 };
 

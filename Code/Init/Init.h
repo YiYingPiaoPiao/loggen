@@ -6,7 +6,7 @@
  | Created on 30-Nov-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 30-Nov-2023
+ | Last modified on 01-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
@@ -20,13 +20,15 @@
 
 #include "../global.h"
 
-// Setter
+private void userInput(char**);
+
 private void setProjectName(char*);
 
-// Function
+
 private bool isInit();
 
-// Var
-private char* ProjectName;
+
+private char** UserInput  ;
+private char*  ProjectName;
 
 #endif // CODE_INIT_H

@@ -10,7 +10,10 @@
 
 <hr width="20%"/>
 
-`First of all, this project is for me to learn C language and understand how it works.`
+```
+First of all, this project is for me to learn C language and understand how it works.
+```
+
 </div>
 
 <div align="center">
