@@ -29,6 +29,19 @@ First of all, this project is for me to learn C language and understand how it w
 C Language
 
 <div align="center">
+
+#### ***IDE***
+
+<table>
+    <tr>
+        <td><a href="https://github.com/SeeChen/"><kbd><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/12/clion.ico.png" width="75" height="75"/></kbd></a></td>
+        <td><a href="https://www.jetbrains.com/clion/">CLion</a></td>
+    </tr>
+</table>
+
+</div>
+
+<div align="center">
 <hr width="20%"/>
 
 ### **GUIDE**
