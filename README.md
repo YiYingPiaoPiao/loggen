@@ -34,7 +34,7 @@ C Language
 
 <table>
     <tr>
-        <td><a href="https://github.com/SeeChen/"><kbd><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/12/clion.ico.png" width="75" height="75"/></kbd></a></td>
+        <td><a href="https://www.jetbrains.com/clion/"><kbd><img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/12/clion.ico.png" width="75" height="75"/></kbd></a></td>
         <td><a href="https://www.jetbrains.com/clion/">CLion</a></td>
     </tr>
 </table>
@@ -85,5 +85,5 @@ C Language
 ---
 <div align="right">
 
-###### *Last Modified by [SeeChen](https://github.com/SeeChen/) @ 29-NOV-2023 22:20 UTC +08:00*
+###### *Last Modified by [SeeChen](https://github.com/SeeChen/) @ 01-DEC-2023 23:34 UTC +08:00*
 </div>

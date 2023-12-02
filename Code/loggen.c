@@ -6,7 +6,7 @@
  | Created on 29-Nov-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 01-Dec-2023
+ | Last modified on 02-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
@@ -17,25 +17,22 @@
 int main(int argc, char **argv) {
 
     ObjectsCreate();
-    CommandPair* commandPair = CommandPairCreate();
 
     if (argc <= 1) {
 
         printf("%s", help->getHelp(0));
 
         ObjectsClearUp();
-        CommandPairClear(commandPair);
-
         return 0;
     }
 
+    CommandPair* commandPair = CommandPairCreate();
     if (getCommandIndex(commandPair, argv[1]) < 0) {
 
         printf("%s", help->getHelp(0));
 
         ObjectsClearUp();
         CommandPairClear(commandPair);
-
         return 0;
     }
 
@@ -43,7 +40,6 @@ int main(int argc, char **argv) {
 
     ObjectsClearUp();
     CommandPairClear(commandPair);
-
     return 0;
 }
 
