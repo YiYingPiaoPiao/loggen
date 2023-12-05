@@ -1,31 +1,26 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Error/error.h
+ | File : LoggenCommand/LoggenCommandPub.h
  |
- | Created on 29-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 29-Nov-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_ERROR_H
-#define CODE_ERROR_H
+#ifndef CODE_LOGGENCOMMANDPUB_H
+#define CODE_LOGGENCOMMANDPUB_H
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "../LoggenGlobal.h"
+#include "../Struct/LoggenStructCommand.h"
 
-#include "../global.h"
-#include "../Struct/struct_error.h"
+typedef struct LOGGEN_COMMAND LOGGEN_COMMAND;
 
-#define ErrorSize 5
+public LOGGEN_COMMAND* LoggenCommand ();
+public void            LoggenCommand_Free ( LOGGEN_COMMAND* );
 
-private char* getMsg(int);
-private void  setMsg();
-
-private char** Msg;
-
-#endif //CODE_ERROR_H
+#endif //CODE_LOGGENCOMMANDPUB_H

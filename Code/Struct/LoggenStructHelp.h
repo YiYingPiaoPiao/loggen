@@ -1,26 +1,25 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Error/ErrorPub.c
+ | File : Struct/LoggenStructHelp.h
  |
- | Created on 30-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 30-Nov-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_ERRORPUB_H
-#define CODE_ERRORPUB_H
+#ifndef CODE_LOGGENSTRUCTHELP_H
+#define CODE_LOGGENSTRUCTHELP_H
 
-#include "../global.h"
-#include "../Struct/struct_error.h"
+#include "../LoggenGlobal.h"
 
-typedef struct ERROR ERROR;
+struct LOGGEN_HELP {
 
-public ERROR *Error();
-public void  freeError(ERROR*);
+    char* ( *getTips ) ( LOGGEN_HELP_TYPE );
+};
 
-#endif //CODE_ERRORPUB_H
+#endif //CODE_LOGGENSTRUCTHELP_H

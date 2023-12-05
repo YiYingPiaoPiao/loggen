@@ -1,46 +1,45 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : loggen.h
+ | File : LoggenSettings/LoggenSettings.h
  |
- | Created on 29-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 04-Dec-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_LOGGEN_H
-#define CODE_LOGGEN_H
+#ifndef CODE_PRILOGGENSETTINGS_H
+#define CODE_PRILOGGENSETTINGS_H
 
-#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
-#include "LoggenGlobal.h"
+#include "../LoggenGlobal.h"
 
-#include "LoggenHelp/LoggenHelpPub.h"
-#include "LoggenSettings/LoggenSettingsPub.h"
+private char* getPropertyPath ( LOGGEN_PROPERTY_TYPE );
 
 // Cross-Platform
 #ifdef _WIN32
 
 #include <io.h>
 
-char* envVar = "USERPROFILE";
+#define LoggenMkdir( Path ) mkdir( Path )
+
+private char* UserEnvVar = "USERPROFILE";
 
 #elif __linux__
 
 #include <unistd.h>
 #include <sys/stat.h>
 
-char* envVar = "HOME";
+#define LoggenMkdir( Path ) mkdir( Path, S_IRWXU )
+
+private char* UserEnvVar = "HOME";
 
 #endif
 
-LOGGEN_HELP    * loggenHelp    ;
-LOGGEN_SETTINGS* loggenSettings;
-
-#endif //CODE_LOGGEN_H
+#endif //CODE_PRILOGGENSETTINGS_H

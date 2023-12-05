@@ -1,34 +1,26 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Init/Init.h
+ | File : LoggenHelp/LoggenHelpPub.h
  |
- | Created on 30-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 01-Dec-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_INIT_H
-#define CODE_INIT_H
+#ifndef CODE_LOGGENHELPPUB_H
+#define CODE_LOGGENHELPPUB_H
 
-#include <io.h>
-#include <stdlib.h>
+#include "../LoggenGlobal.h"
+#include "../Struct/LoggenStructHelp.h"
 
-#include "../global.h"
+typedef struct LOGGEN_HELP LOGGEN_HELP;
 
-private void userInput(char**);
+public LOGGEN_HELP* LoggenHelp ();
+public void         LoggenHelp_Free ( LOGGEN_HELP* );
 
-private void setProjectName(char*);
-
-
-private bool isInit();
-
-
-private char** UserInput  ;
-private char*  ProjectName;
-
-#endif // CODE_INIT_H
+#endif //CODE_LOGGENHELPPUB_H

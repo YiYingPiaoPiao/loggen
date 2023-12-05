@@ -1,26 +1,26 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Help/HelpPub.h
+ | File : LoggenSettings/LoggenSettingsPub.h
  |
- | Created on 30-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 01-Dec-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_HELPPUB_H
-#define CODE_HELPPUB_H
+#ifndef CODE_LOGGENSETTINGSPUB_H
+#define CODE_LOGGENSETTINGSPUB_H
 
-#include "../global.h"
-#include "../Struct/struct_help.h"
+#include "../LoggenGlobal.h"
+#include "../Struct/LoggenStructSettings.h"
 
-typedef struct HELP HELP;
+typedef struct LOGGEN_SETTINGS LOGGEN_SETTINGS;
 
-public HELP *Help();
-public void freeHelp(HELP*);
+public LOGGEN_SETTINGS* LoggenSettings ();
+public void             LoggenSettings_Free ( LOGGEN_SETTINGS* );
 
-#endif //CODE_HELPPUB_H
+#endif //CODE_LOGGENSETTINGSPUB_H

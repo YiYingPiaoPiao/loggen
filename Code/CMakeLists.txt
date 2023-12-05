@@ -4,24 +4,23 @@ project(Code C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Code
-        global.h
+        LoggenGlobal.h
 
         loggen.c
         loggen.h
 
-        Struct/struct_error.h
-        Struct/struct_help.h
-        Struct/struct_init.h
+        Struct/LoggenStructSettings.h
+        LoggenSettings/LoggenSettings.c
+        LoggenSettings/LoggenSettings.h
+        LoggenSettings/LoggenSettingsPub.h
 
-        Error/Error.c
-        Error/Error.h
-        Error/ErrorPub.h
+        Struct/LoggenStructHelp.h
+        LoggenHelp/LoggenHelp.c
+        LoggenHelp/LoggenHelp.h
+        LoggenHelp/LoggenHelpPub.h
 
-        Help/Help.c
-        Help/Help.h
-        Help/HelpPub.h
-
-        Init/Init.c
-        Init/Init.h
-        Init/InitPub.h
+        Struct/LoggenStructCommand.h
+        LoggenCommand/LoggenCommand.c
+        LoggenCommand/LoggenCommand.h
+        LoggenCommand/LoggenCommandPub.h
 )

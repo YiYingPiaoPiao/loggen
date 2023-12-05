@@ -1,25 +1,27 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Struct/struct_help.h
+ | File : Struct/LoggenStructCommand.h
  |
- | Created on 29-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 01-Dec-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_STRUCT_HELP_H
-#define CODE_STRUCT_HELP_H
+#ifndef CODE_LOGGENSTRUCTCOMMAND_H
+#define CODE_LOGGENSTRUCTCOMMAND_H
 
-struct HELP {
+#include "../LoggenGlobal.h"
 
-    void (*userInput)(char**);
+struct LOGGEN_COMMAND {
 
-    char* (*getHelp)(int);
+    char* Command;
+
+    int ( *getCommandIndex ) ( LOGGEN_COMMAND_INPUT );
 };
 
-#endif //CODE_STRUCT_HELP_H
+#endif //CODE_LOGGENSTRUCTCOMMAND_H

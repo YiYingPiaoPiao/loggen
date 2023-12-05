@@ -1,26 +1,23 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : Init/InitPub.h
+ | File : Struct/LoggenStructSettings.h
  |
- | Created on 30-Nov-2023
+ | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 01-Dec-2023
+ | Last modified on 05-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_INITPUB_H
-#define CODE_INITPUB_H
+#ifndef CODE_LOGGENSTRUCTSETTINGS_H
+#define CODE_LOGGENSTRUCTSETTINGS_H
 
-#include "../global.h"
-#include "../Struct/struct_init.h"
+struct LOGGEN_SETTINGS {
 
-typedef struct INIT INIT;
 
-public INIT *Init();
-public void freeInit(INIT*);
+};
 
-#endif // CODE_INITPUB_H
+#endif //CODE_LOGGENSTRUCTSETTINGS_H
