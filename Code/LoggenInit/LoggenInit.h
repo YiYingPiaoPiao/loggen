@@ -1,26 +1,24 @@
 /******************************************************
  | Generate Log
  |******************************************************
- | File : LoggenCommand/LoggenCommandPub.h
+ | File : LoggenInit/LoggenInit.h
  |
- | Created on 05-DEC-2023
+ | Created on 06-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 05-Dec-2023
+ | Last modified on 06-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
  |*********************************************************************/
 
-#ifndef CODE_LOGGENCOMMANDPUB_H
-#define CODE_LOGGENCOMMANDPUB_H
+#ifndef CODE_LOGGENINIT_H
+#define CODE_LOGGENINIT_H
+
+#include <stdlib.h>
 
 #include "../LoggenGlobal.h"
-#include "../Struct/LoggenStructCommand.h"
 
-typedef struct LOGGEN_COMMAND LOGGEN_COMMAND;
+private char* LoggenInitMain ( int, char** );
 
-public LOGGEN_COMMAND* LoggenCommand ();
-public void            LoggenCommand_Free ( LOGGEN_COMMAND* );
-
-#endif //CODE_LOGGENCOMMANDPUB_H
+#endif // CODE_LOGGENINIT_H

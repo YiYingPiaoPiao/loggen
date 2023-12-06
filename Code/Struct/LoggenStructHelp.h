@@ -19,7 +19,8 @@
 
 struct LOGGEN_HELP {
 
-    char* ( *getTips ) ( LOGGEN_HELP_TYPE );
+    char* ( *getTipsType    ) ( LOGGEN_HELP_TYPE    );
+    char* ( *getTipsCommand ) ( LOGGEN_HELP_COMMAND );
 };
 
 #endif //CODE_LOGGENSTRUCTHELP_H

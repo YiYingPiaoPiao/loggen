@@ -20,6 +20,7 @@
 
 #include "../LoggenGlobal.h"
 
-private char* getTips ( LOGGEN_HELP_TYPE );
+private char* getTipsType    ( LOGGEN_HELP_TYPE    );
+private char* getTipsCommand ( LOGGEN_HELP_COMMAND );
 
 #endif //CODE_LOGGENHELP_H

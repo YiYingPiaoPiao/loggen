@@ -19,7 +19,8 @@ public LOGGEN_HELP* LoggenHelp () {
 
     LOGGEN_HELP* LoggenHelp = ( LOGGEN_HELP* ) malloc ( sizeof ( LOGGEN_HELP ) );
 
-    LoggenHelp -> getTips = getTips;
+    LoggenHelp -> getTipsType    = getTipsType   ;
+    LoggenHelp -> getTipsCommand = getTipsCommand;
 
     return LoggenHelp;
 }
@@ -29,17 +30,27 @@ public void LoggenHelp_Free ( LOGGEN_HELP* FreeLoggenHelp ) {
     free ( FreeLoggenHelp );
 }
 
-private char* getTips ( LOGGEN_HELP_TYPE HelpType ) {
+private char* getTipsType ( LOGGEN_HELP_TYPE HelpType ) {
 
-    if ( strcmp ( LOGGEN_HELP_SHORT, HelpType ) == 0 ) {
+    if ( strcmp ( LOGGEN_HELP_TYPE_SHORT, HelpType ) == 0 ) {
 
         return "usage short";
     }
 
-    if ( strcmp ( LOGGEN_HELP_LONG, HelpType ) == 0 ) {
+    if ( strcmp ( LOGGEN_HELP_TYPE_LONG, HelpType ) == 0 ) {
 
         return "usage long";
     }
 
     return HelpType;
+}
+
+private char* getTipsCommand ( LOGGEN_HELP_COMMAND UserCommand ) {
+
+    if ( strcmp ( LOGGEN_HELP_COMMAND_INIT, UserCommand ) == 0 ) {
+
+        return "Using loggen init help to get More message.";
+    }
+
+    return UserCommand;
 }

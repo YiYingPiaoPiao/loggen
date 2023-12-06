@@ -19,8 +19,8 @@ add_executable(Code
         LoggenHelp/LoggenHelp.h
         LoggenHelp/LoggenHelpPub.h
 
-        Struct/LoggenStructCommand.h
-        LoggenCommand/LoggenCommand.c
-        LoggenCommand/LoggenCommand.h
-        LoggenCommand/LoggenCommandPub.h
+        Struct/LoggenStructInit.h
+        LoggenInit/LoggenInit.c
+        LoggenInit/LoggenInit.h
+        LoggenInit/LoggenInitPub.h
 )

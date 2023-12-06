@@ -22,24 +22,4 @@
 
 private char* getPropertyPath ( LOGGEN_PROPERTY_TYPE );
 
-// Cross-Platform
-#ifdef _WIN32
-
-#include <io.h>
-
-#define LoggenMkdir( Path ) mkdir( Path )
-
-private char* UserEnvVar = "USERPROFILE";
-
-#elif __linux__
-
-#include <unistd.h>
-#include <sys/stat.h>
-
-#define LoggenMkdir( Path ) mkdir( Path, S_IRWXU )
-
-private char* UserEnvVar = "HOME";
-
-#endif
-
 #endif //CODE_PRILOGGENSETTINGS_H
