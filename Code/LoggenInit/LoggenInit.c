@@ -6,7 +6,7 @@
  | Created on 06-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 06-Dec-2023
+ | Last modified on 07-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
@@ -43,7 +43,7 @@ private char* LoggenInitMain ( int UserInputLen, char** UserInput ) {
         LoggenMkdir ( "./Loggen" );
         LoggenMkdir ( "./Loggen/.loggen" );
 
-        return UserInput[2];
+        return UserInput [ 2 ];
     }
 
     return "test";

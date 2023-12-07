@@ -6,7 +6,7 @@
  | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 05-Dec-2023
+ | Last modified on 07-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
@@ -19,18 +19,15 @@ public LOGGEN_SETTINGS* LoggenSettings () {
 
     LOGGEN_SETTINGS* LoggenSettings = ( LOGGEN_SETTINGS* ) malloc ( sizeof ( LOGGEN_SETTINGS ) );
 
-    char* GlobalPath = getPropertyPath ( LOGGEN_SCOPE_GLOBAL );
-    if ( access( GlobalPath, F_OK ) == -1 ) {
-
-        LoggenMkdir ( GlobalPath );
-    }
+    LoggenSettings -> getPropertyPath = getPropertyPath;
+    LoggenSettings -> createFolder    = createFolder   ;
 
     return LoggenSettings;
 }
 
 public void LoggenSettings_Free ( LOGGEN_SETTINGS* FreeLoggenSettings ) {
 
-    free(FreeLoggenSettings);
+    free ( FreeLoggenSettings );
 }
 
 private char* getPropertyPath ( LOGGEN_PROPERTY_TYPE Scope ) {
@@ -51,8 +48,18 @@ private char* getPropertyPath ( LOGGEN_PROPERTY_TYPE Scope ) {
 
     if ( strcmp ( LOGGEN_SCOPE_LOCAL, Scope ) == 0 ) {
 
+        strcat ( "./Loggen", PropertyFolderName );
+
         return PropertyFolderName;
     }
 
     return "";
+}
+
+private void createFolder ( char* PropertyPath ) {
+
+    if ( access ( PropertyPath, F_OK ) == -1 ) {
+
+        LoggenMkdir ( PropertyPath );
+    }
 }

@@ -19,6 +19,8 @@ int main ( int argc, char** argv ) {
     loggenHelp     = new LoggenHelp     ();
     loggenSettings = new LoggenSettings ();
 
+    loggenSettings -> createFolder ( loggenSettings -> getPropertyPath ( LOGGEN_SCOPE_GLOBAL ) );
+
     if ( argc <= 1 ) {
 
         printf ( "%s\n", loggenHelp -> getTipsType ( LOGGEN_HELP_TYPE_SHORT ) );

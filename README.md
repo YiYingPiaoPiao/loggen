@@ -24,11 +24,13 @@ First of all, this project is for me to learn C language and understand how it w
 <div align="center">
 
 #### ***Language***
-</div>
 
-C Language
-
-<div align="center">
+<table>
+    <tr>
+        <td><a href="https://www.jetbrains.com/clion/"><kbd><img src="https://www.techbaz.org/Course/img/c-logo.png" width="75" height="75"/></kbd></a></td>
+        <td><a href="https://www.w3schools.com/c/index.php">C Language</a></td>
+    </tr>
+</table>
 
 #### ***IDE***
 
@@ -85,5 +87,5 @@ C Language
 ---
 <div align="right">
 
-###### *Last Modified by [SeeChen](https://github.com/SeeChen/) @ 01-DEC-2023 23:34 UTC +08:00*
+###### *Last Modified by [SeeChen](https://github.com/SeeChen/) @ 06-DEC-2023 22:51 UTC +08:00*
 </div>

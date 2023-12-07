@@ -21,5 +21,6 @@
 #include "../LoggenGlobal.h"
 
 private char* getPropertyPath ( LOGGEN_PROPERTY_TYPE );
+private void  createFolder    ( char*                );
 
 #endif //CODE_PRILOGGENSETTINGS_H

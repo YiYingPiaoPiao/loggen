@@ -6,7 +6,7 @@
  | Created on 05-DEC-2023
  | By YiYingPiaoPiao [yiyingpiaopiao@gmail.com]
  |
- | Last modified on 05-Dec-2023
+ | Last modified on 07-Dec-2023
  | By SeeChen Lee [leeseechen@gmail.com]
  |*********************************************************************
  | Copyright (c) 2023 SeeChen-Lee, YiYingPiaoPiao All rights reserved.
@@ -17,7 +17,8 @@
 
 struct LOGGEN_SETTINGS {
 
-
+    char* ( *getPropertyPath ) ( LOGGEN_PROPERTY_TYPE );
+    void  ( *createFolder    ) ( char*                );
 };
 
 #endif //CODE_LOGGENSTRUCTSETTINGS_H
